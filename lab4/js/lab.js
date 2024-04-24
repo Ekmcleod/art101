@@ -1,21 +1,27 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// Pinball game
+// An implementation of the game
+// Ekaterina Mcleod and Tanner-Norris-Spano
+// April 2024
 
-// Constants
 
-// Functions
+//Set up the game environment
+  //- Create the playfield with obstacles, flippers, bumpers, and targets.
+  //- Initialize game variables like score and lives.
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
-}
+//2. Launch the ball
+  //- Display a plunger for the player to pull or press to launch the ball onto the playfield.
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
+// 3. Ball movement and collision detection
+  //- Implement physics for the ball's movement (gravity, bounce, friction).
+  //- Detects collisions with flippers, bumpers, walls, and targets.
 
-// let's get this party started
-main();
+//4. Score and game progression
+  //- Increase the score based on interactions with bumpers, targets, and other elements.
+  //- Track the number of balls remaining (lives).
+  //- Implement bonuses or extra balls for achieving certain goals.
+
+//5. End of game
+  //- Decrease lives when the ball falls through the bottom of the playfield.
+  //- Check for game-over conditions (no lives left).
+  //- Allow the player to restart the game or exit.
+
