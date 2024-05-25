@@ -1,5 +1,5 @@
 body {
-    background-image: url('/Users/ekaterinamcleod/Desktop/Art101/project/img/forest.jpg'); /* Path to your background image */
+    background-image: url('img/forest.jpg'); /* Path to your background image */
     background-size: cover; /* Ensures the image covers the entire background */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     background-attachment: fixed; /* Keeps the background fixed during scrolling */
