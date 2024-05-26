@@ -1,22 +1,19 @@
 body {
-    background-image: url('img/forest.jpg'); /* Path to your background image */
+    background-image: url('../img/forest.jpg'); /* Correct path to the image */
     background-size: cover; /* Ensures the image covers the entire background */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     background-attachment: fixed; /* Keeps the background fixed during scrolling */
     background-position: center; /* Centers the image */
-}
-
-/* CSS for the main page */
-body {
     font-family: Arial, sans-serif;
 }
 
+/* CSS for the button */
 button {
-    padding: 20x;
+    padding: 20px; /* Fixed typo: changed from 20x to 20px */
     font-size: 20px;
     width: 80px;
     height: 80px;
-    border-radius: 50%
+    border-radius: 50%;
 }
 
 /* CSS for the popup */
