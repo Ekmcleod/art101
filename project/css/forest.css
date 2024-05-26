@@ -1,10 +1,20 @@
 body {
-    background-image: url('../img/forest.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+    background-image: url('../img/forest.jpg'); /* Correct path to the image */
+    background-size: cover; /* Ensures the image covers the entire background without distortion */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+    background-position: center; /* Centers the image */
     font-family: Arial, sans-serif;
+}
+
+#title-container {
+    text-align: center; /* Centers the content horizontally */
+    padding-top: 50px; /* Adjust as needed for vertical spacing */
+}
+
+h1 {
+    font-size: 36px; /* Adjust the font size as needed */
+    color: #fff; /* Text color */
 }
 
 /* Common button styles */
@@ -33,10 +43,9 @@ body {
     height: 80px;
     background-color: rgba(68, 255, 0, 0.594);
     color: white;
+    position: fixed;
     bottom: 20px;
-    left: 50%;
-    transform: translateY(100%);
-    transform: translateX(500%);
+    left: calc(50% - 40px)
 }
 
 /* Button 3 */
