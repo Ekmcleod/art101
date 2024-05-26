@@ -8,20 +8,40 @@
     <script src="js/forest.js" defer></script>
 </head>
 <body>
-    <!-- Button to open the popup -->
-    <button onclick="openPopup()">?</button>
+    <!-- Button to open the first popup -->
+    <button class="button button1" onclick="openPopup('popup1')">?</button>
 
-    <!-- The popup -->
-    <div id="popup" class="popup">
+    <!-- The first popup -->
+    <div id="popup1" class="popup">
         <div class="popup-content">
-            <span class="close" onclick="closePopup()">&times;</span>
-            <p>You've encountered a pokemon!!</p>
+            <span class="close" onclick="closePopup('popup1')">&times;</span>
+            <p>You've encountered a Pokemon!!</p>
             <img src="img/realbug.jpg" alt="Popup Image" width="200" height="150">
         </div>
     </div>
 
-    
+    <!-- Button to open the second popup -->
+    <button class="button button2" onclick="openPopup('popup2')">!</button>
 
-    <script src="script.js"></script> <!-- Link to external JavaScript file -->
+    <!-- The second popup -->
+    <div id="popup2" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup2')">&times;</span>
+            <p>You've dencountered a Pokemon!!</p></p>
+            <img src="img/realslug.jpg" alt="Popup Image" width="200" height="150">
+        </div>
+    </div>
+
+    <!-- Button to open the third popup -->
+    <button class="button button3" onclick="openPopup('popup3')">#</button>
+
+    <!-- The third popup -->
+    <div id="popup3" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup3')">&times;</span>
+            <p>You've dencountered a Pokemon!!</p>
+            <img src="img/realshroom.jpg" alt="Popup Image" width="200" height="150">
+        </div>
+    </div>
 </body>
 </html>
