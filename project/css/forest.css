@@ -10,7 +10,15 @@ body {
 #title-container {
     text-align: center; /* Centers the content horizontally */
     padding-top: 50px; /* Adjust as needed for vertical spacing */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background color */
+    display: inline-block; /* Make the container fit the content */
+    padding: 20px; /* Padding around the content */
+    border-radius: 10px; /* Rounded corners (optional) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow */
 }
+
+
+
 
 h1 {
     font-size: 36px; /* Adjust the font size as needed */
