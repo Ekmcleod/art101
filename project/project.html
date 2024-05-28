@@ -4,28 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <link rel="stylesheet" href="css/project.css"> <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="css/forest.css"> <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="css/project.css"> //tanners contirbutions 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            transition: background-image 0.5s ease-in-out;
+            background-image: url('https://redpawtechnologies.com/downloads/2020/04/SantaCruzCA.jpg'); /* Default background for main page */
+            background-size: cover;
+        }
+        #forest-page {
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    
-
-    <main>
+    <div id="main-page">
+        <main class="rectangle-background">
+            <div id="title-container">
+                <h1>Inspirational Inhabitants</h1>
+            </div>
+            <p>This page serves as a portal to the Forest where you can encounter various Pokémon-inspired creatures.</p>
+            <p>Click the "Forest!" button to explore and discover more about the fascinating world of Pokémon and their real-life counterparts.</p>
+            <img src> 
+        </main>
         
-    </main>
+  
+    <button id="goToForestBtn" style="position: fixed; top: 10px; left: 10px; padding: 20px; font-size: 15px; width: 80px; height: 80px; border-radius: 50%;">Forest!</button>
+</div>
 
-    
 
-    <script src="script.js"></script> <!-- Link to external JavaScript file -->
-    
-    <button id="goToPageBtn" style="position: fixed; top: 10px; left: 10px; padding: 20px; font-size: 15px; width: 80px; height: 80px; border-radius: 50%;">Forest!</button>
+    <div id="forest-page">
+        <div id="title-container">
+            <h1>There's Pokemon in this Forest</h1>
+        </div>
+
+        <!-- Button to open the first popup -->
+        <button class="button button1" onclick="openPopup('popup1')">?</button>
+
+        <!-- The first popup -->
+        <div id="popup1" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('popup1')">&times;</span>
+                <p>You've encountered a Pokemon!!</p>
+                <img src="img/realbug.jpg" alt="Popup Image" width="200" height="150">
+                <p>Species Sphex pensylvanicus, or Great Black Wasp.
+                    Construction of nests takes place underground, species of digging wasp, deep black body color paired with iridescent shining blue wings, adults return paralyzed prey to the burrow for the larva’s consumption.
+                </p>
+                <img src="img/beepoke.jpeg" alt="Additional Image" width="200" height="150">
+                <p> Inspired Pokemon: Beedrill</p>
+            </div>
+        </div>
+
+        <!-- Button to open the second popup -->
+        <button class="button button2" onclick="openPopup('popup2')">?</button>
+
+        <!-- The second popup -->
+        <div id="popup2" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('popup2')">&times;</span>
+                <p>You've encountered a Pokemon!!</p>
+                <img src="img/realslug.jpg" alt="Popup Image" width="200" height="150">
+                <p>Species Ariolimax, or Banana Slug.
+                    Second largest slug species in the world with no predators, identifiable by their bright yellow colorations, due to this combination they are resemblant of a banana, hence their name, may be found in a variety of colors. 
+                </p>
+                <img src="img/slugpoke.jpeg" alt="Additional Image" width="200" height="150">
+                <p> Inspired Pokemon: Gastrodon</p>
+            </div>
+        </div>
+
+        <!-- Button to open the third popup -->
+        <button class="button button3" onclick="openPopup('popup3')">?</button>
+
+        <!-- The third popup -->
+        <div id="popup3" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('popup3')">&times;</span>
+                <p>You've encountered a Pokemon!!</p>
+                <img src="img/realshroom.jpg" alt="Popup Image" width="200" height="150">
+                <p>Species Omphalotus olivascens, or Western Jack-o-Lantern Mushroom.
+                    Gilled fungi ranging from orange to brown in color, toxins make them unfit for human consumption, can be mistaken for chanterelles.
+                </p>
+                <img src="img/shroompoke.jpeg" alt="Additional Image" width="200" height="150">
+                <p> Inspired Pokemon: Foongus</p>
+            </div>
+        </div>
+
+        <button id="goToMainPageBtn" style="position: fixed; top: 10px; right: 10px; padding: 20px; font-size: 15px; width: 80px; height: 80px; border-radius: 50%;">Home</button>
+    </div>
+
+    <script src="js/forest.js"></script> <!-- Link to external JavaScript file -->
 
     <script>
-        document.getElementById('goToPageBtn').onclick = function() {
-            window.location.href = 'forest.html';
-        };
+        function openPopup(popupId) {
+            $('#' + popupId).fadeIn();
+        }
+
+        function closePopup(popupId) {
+            $('#' + popupId).fadeOut();
+        }
+
+        $('#goToForestBtn').click(function() {
+            $('#main-page').hide();
+            $('body').css('background-image', 'url("img/forest.jpg")');
+            $('#forest-page').show();
+        });
+
+        $('#goToMainPageBtn').click(function() {
+            $('#forest-page').hide();
+            $('body').css('background-image', 'url("https://redpawtechnologies.com/downloads/2020/04/SantaCruzCA.jpg")'); // Reset to main page background
+            $('#main-page').show();
+        });
     </script>
-    
-    
- 
 </body>
 </html>
