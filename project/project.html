@@ -1,13 +1,14 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <link rel="stylesheet" href="css/forest.css">
-    <link rel="stylesheet" href="css/project.css">
-    <link rel="stylesheet" href="css/ocean.css">
+    <link rel="stylesheet" href="css/forest.css"> <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="css/project.css"> <!-- Tanner's contributions -->
+    <link rel="stylesheet" href="css/ocean.css"> 
     
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
         body {
@@ -15,7 +16,7 @@
             background-image: url('https://redpawtechnologies.com/downloads/2020/04/SantaCruzCA.jpg'); /* Default background for main page */
             background-size: cover;
         }
-        #forest-page, #ocean-page, #city-page {
+        #forest-page, #ocean-page {
             display: none;
         }
         .button {
@@ -36,97 +37,120 @@
                 <h1>Inspirational Inhabitants</h1>
             </div>
             <p>This page serves as a portal to various pages where you can encounter different Pokémon-inspired creatures.</p>
-            <p>Click the buttons below to explore and discover more about the fascinating world of Pokémon and their real-life counterparts.</p>
+            <p>Click the "Forest!" button to explore and discover more about the fascinating world of Pokémon and their real-life counterparts.</p>
             <button id="goToForestBtn" class="button" style="left: 10px;">Forest!</button>
             <button id="goToOceanBtn" class="button" style="left: 100px;">Ocean!</button>
-            <button id="goToCityBtn" class="button" style="left: 190px;">City!</button>
-            <img src="img/default.jpg" alt="Default Image">
+            <img src="img/default.jpg" alt="Default Image"> <!-- Ensure this image source is correct -->
         </main>
     </div>
 
     <div id="forest-page">
-        div id="title-container">
-        <h1>There's Pokemon in this Forest</h1>
-    </div>
-
-    <!-- Buttons to open the popups -->
-    <button class="button button1" style="left: 10px;" onclick="openPopup('popup1')">?</button>
-    <button class="button button2" style="left: 100px;" onclick="openPopup('popup2')">?</button>
-    <button class="button button3" style="left: 190px;" onclick="openPopup('popup3')">?</button>
-
-    <!-- The popups -->
-    <div id="popup1" class="popup" style="display:none;">
-        <div class="popup-content">
-            <span class="close" onclick="closePopup('popup1')">&times;</span>
-            <p>You've encountered a Pokemon!!</p>
-            <img src="img/realbug.jpg" alt="Popup Image" width="200" height="150">
-            <p>Species Sphex pensylvanicus, or Great Black Wasp.
-                Construction of nests takes place underground, species of digging wasp, deep black body color paired with iridescent shining blue wings, adults return paralyzed prey to the burrow for the larva’s consumption.
-            </p>
-            <img src="img/beepoke.jpeg" alt="Additional Image" width="200" height="150">
-            <p> Inspired Pokemon: Beedrill</p>
+        <div id="title-container">
+            <h1>There's Pokemon in this Forest</h1>
         </div>
+
+        <!-- Buttons to open the popups -->
+        <button class="button button1" style="left: 10px;" onclick="openPopup('popup1')">?</button>
+        <button class="button button2" style="left: 100px;" onclick="openPopup('popup2')">?</button>
+        <button class="button button3" style="left: 190px;" onclick="openPopup('popup3')">?</button>
+
+        <!-- The popups -->
+        <div id="popup1" class="popup" style="display:none;">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('popup1')">&times;</span>
+                <p>You've encountered a Pokemon!!</p>
+                <img src="img/realbug.jpg" alt="Popup Image" width="200" height="150">
+                <p>Species Sphex pensylvanicus, or Great Black Wasp.
+                    Construction of nests takes place underground, species of digging wasp, deep black body color paired with iridescent shining blue wings, adults return paralyzed prey to the burrow for the larva’s consumption.
+                </p>
+                <img src="img/beepoke.jpeg" alt="Additional Image" width="200" height="150">
+                <p> Inspired Pokemon: Beedrill</p>
+            </div>
+        </div>
+
+        <div id="popup2" class="popup" style="display:none;">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('popup2')">&times;</span>
+                <p>You've encountered a Pokemon!!</p>
+                <img src="img/realslug.jpg" alt="Popup Image" width="200" height="150">
+                <p>Species Ariolimax, or Banana Slug.
+                    Second largest slug species in the world with no predators, identifiable by their bright yellow colorations, due to this combination they are resemblant of a banana, hence their name, may be found in a variety of colors. 
+                </p>
+                <img src="img/slugpoke.jpeg" alt="Additional Image" width="200" height="150">
+                <p> Inspired Pokemon: Gastrodon</p>
+            </div>
+        </div>
+
+        <div id="popup3" class="popup" style="display:none;">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('popup3')">&times;</span>
+                <p>You've encountered a Pokemon!!</p>
+                <img src="img/realshroom.jpg" alt="Popup Image" width="200" height="150">
+                <p>Species Omphalotus olivascens, or Western Jack-o-Lantern Mushroom.
+                    Gilled fungi ranging from orange to brown in color, toxins make them unfit for human consumption, can be mistaken for chanterelles.
+                </p>
+                <img src="img/shroompoke.jpeg" alt="Additional Image" width="200" height="150">
+                <p> Inspired Pokemon: Foongus</p>
+            </div>
+        </div>
+
+        <button id="goToMainPageBtn" class="button" style="left: auto; right: 10px;">Home</button>
     </div>
+
     <div id="ocean-page">
         <div id="title-container">
             <h1>There's Pokemon in this Ocean</h1>
         </div>
-        <!-- Ocean content and popups -->
-        <!-- Omitted for brevity -->
+
+        <!-- Buttons to open the popups -->
+        <button class="button button1" style="left: 10px;" onclick="openPopup('popup4')">?</button>
+        <button class="button button2" style="left: 100px;" onclick="openPopup('popup5')">?</button>
+        <button class="button button3" style="left: 190px;" onclick="openPopup('popup6')">?</button>
+
+        <!-- The popups -->
+        <div id="popup4" class="popup" style="display:none;">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('popup4')">&times;</span>
+                <p>You've encountered a Pokemon!!</p>
+                <img src="img/seagull.jpg" alt="Popup Image" width="200" height="150">
+                <p>Species Aurelia aurita, or Moon Jellyfish.
+                    Translucent and often found near the surface, these jellyfish are easily recognizable by their four horseshoe-shaped gonads visible through the bell.
+                </p>
+                <img src="img/jellypoke.jpeg" alt="Additional Image" width="200" height="150">
+                <p> Inspired Pokemon: Tentacool</p>
+            </div>
+        </div>
+
+        <div id="popup5" class="popup" style="display:none;">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('popup5')">&times;</span>
+                <p>You've encountered a Pokemon!!</p>
+                <img src="img/crab.jpg" alt="Popup Image" width="200" height="150">
+                <p>Species Balaenoptera musculus, or Blue Whale.
+                    The largest animal ever known to have existed, these magnificent creatures are identifiable by their blue-gray coloration and immense size.
+                </p>
+                <img src="img/whalepoke.jpeg" alt="Additional Image" width="200" height="150">
+                <p> Inspired Pokemon: Wailord</p>
+            </div>
+        </div>
+
+        <div id="popup6" class="popup" style="display:none;">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('popup6')">&times;</span>
+                <p>You've encountered a Pokemon!!</p>
+                <img src="img/fish.jpg" alt="Popup Image" width="200" height="150">
+                <p>Species Hippocampus, or Seahorse.
+                    Known for their unique equine appearance, these small marine fish are notable for their monogamous pairs and the male's role in carrying the eggs.
+                </p>
+                <img src="img/seahorsepoke.jpeg" alt="Additional Image" width="200" height="150">
+                <p> Inspired Pokemon: Horsea</p>
+            </div>
+        </div>
+
         <button id="goToMainPageBtn2" class="button" style="left: auto; right: 10px;">Home</button>
     </div>
 
-    <div id="city-page">
-        <div id="title-container">
-            <h1>There's Pokemon in this City</h1>
-        </div>
-        <!-- Buttons to open the popups -->
-        <button class="button button1" style="left: 10px;" onclick="openPopup('popup7')">?</button>
-        <button class="button button2" style="left: 100px;" onclick="openPopup('popup8')">?</button>
-        <button class="button button3" style="left: 190px;" onclick="openPopup('popup9')">?</button>
-
-        <!-- The popups -->
-        <div id="popup7" class="popup" style="display:none;">
-            <div class="popup-content">
-                <span class="close" onclick="closePopup('popup7')">&times;</span>
-                <p>You've encountered a Pokemon!!</p>
-                <img src="img\Cat.jpg" alt="Popup Image" width="200" height="150">
-                <p>Species Columba livia, or Rock Pigeon.
-                    Common in urban areas, these birds are known for their adaptability and ability to thrive in cities.
-                </p>
-                <img src="img/pidgeypoke.jpeg" alt="Additional Image" width="200" height="150">
-                <p> Inspired Pokemon: Pidgey</p>
-            </div>
-        </div>
-
-        <div id="popup8" class="popup" style="display:none;">
-            <div class="popup-content">
-                <span class="close" onclick="closePopup('popup8')">&times;</span>
-                <p>You've encountered a Pokemon!!</p>
-                <img src="img\Raccoon.jpg" alt="Popup Image" width="200" height="150">
-                <p>Species Rattus norvegicus, or Brown Rat.
-                    Highly adaptable and often found in urban environments, these rodents are known for their resilience and resourcefulness.
-                </p>
-                <img src="img/rattatapoke.jpeg" alt="Additional Image" width="200" height="150">
-                <p> Inspired Pokemon: Rattata</p>
-            </div>
-        </div>
-
-        <div id="popup9" class="popup" style="display:none;">
-            <div class="popup-content">
-                <span class="close" onclick="closePopup('popup9')">&times;</span>
-                <p>You've encountered a Pokemon!!</p>
-                <img src="img/squirrel.jpg" alt="Popup Image" width="200" height="150">
-                <p>Species Sciurus carolinensis, or Eastern Gray Squirrel.
-                    Common in urban parks, these squirrels are known for their agility and bushy tails.
-                </p>
-                <img src="img/squirpoke.jpeg" alt="Additional Image" width="200" height="150">
-                <p> Inspired Pokemon: Pachirisu</p>
-            </div>
-        </div>
-
-        <button id="goToMainPageBtn3" class="button" style="left: auto; right: 10px;">Home</button>
-    </div>
+    <script src="js/forest.js"></script> <!-- Link to external JavaScript file -->
 
     <script>
         function openPopup(popupId) {
@@ -149,12 +173,6 @@
             $('#ocean-page').show();
         });
 
-        $('#goToCityBtn').click(function() {
-            $('#main-page').hide();
-            $('body').css('background-image', 'url("img/city.jpg")');
-            $('#city-page').show();
-        });
-
         $('#goToMainPageBtn').click(function() {
             $('#forest-page').hide();
             $('body').css('background-image', 'url("https://redpawtechnologies.com/downloads/2020/04/SantaCruzCA.jpg")');
@@ -163,12 +181,6 @@
 
         $('#goToMainPageBtn2').click(function() {
             $('#ocean-page').hide();
-            $('body').css('background-image', 'url("https://redpawtechnologies.com/downloads/2020/04/SantaCruzCA.jpg")');
-            $('#main-page').show();
-        });
-
-        $('#goToMainPageBtn3').click(function() {
-            $('#city-page').hide();
             $('body').css('background-image', 'url("https://redpawtechnologies.com/downloads/2020/04/SantaCruzCA.jpg")');
             $('#main-page').show();
         });
