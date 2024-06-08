@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <link rel="stylesheet" href="css/forest.css"> <!-- Link to external stylesheet -->
-    <link rel="stylesheet" href="css/project.css"> //tanners contributions 
+    <link rel="stylesheet" href="css/project.css"> //tanners contirbutions 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
         body {
@@ -13,7 +13,7 @@
             background-image: url('https://redpawtechnologies.com/downloads/2020/04/SantaCruzCA.jpg'); /* Default background for main page */
             background-size: cover;
         }
-        #forest-page, #city-page {
+        #forest-page {
             display: none;
         }
     </style>
@@ -26,24 +26,17 @@
             </div>
             <p>This page serves as a portal to the Forest where you can encounter various Pokémon-inspired creatures.</p>
             <p>Click the "Forest!" button to explore and discover more about the fascinating world of Pokémon and their real-life counterparts.</p>
-            <img src="img/main_city.jpg" alt="Main Image">
+            <img src> 
         </main>
         
-        <button id="goToForestBtn" style="position: fixed; top: 10px; left: 10px; padding: 20px; font-size: 15px; width: 80px; height: 80px; border-radius: 50%;">Forest!</button>
-        <button id="goToCityBtn" style="position: fixed; top: 100px; left: 10px; padding: 20px; font-size: 15px; width: 80px; height: 80px; border-radius: 50%;">City!</button>
-    </div>
+  
+    <button id="goToForestBtn" style="position: fixed; top: 10px; left: 10px; padding: 20px; font-size: 15px; width: 80px; height: 80px; border-radius: 50%;">Forest!</button>
+</div>
+
 
     <div id="forest-page">
         <div id="title-container">
             <h1>There's Pokemon in this Forest</h1>
-        </div>
-        <!-- Forest popups here -->
-        <button id="goToMainPageBtnFromForest" style="position: fixed; top: 10px; right: 10px; padding: 20px; font-size: 15px; width: 80px; height: 80px; border-radius: 50%;">Home</button>
-    </div>
-
-    <div id="city-page">
-        <div id="title-container">
-            <h1>There's Creatures in this City</h1>
         </div>
 
         <!-- Button to open the first popup -->
@@ -53,13 +46,13 @@
         <div id="popup1" class="popup">
             <div class="popup-content">
                 <span class="close" onclick="closePopup('popup1')">&times;</span>
-                <p>You've encountered a City Creature!!</p>
-                <img src="img/realpigeon.jpg" alt="Real Pigeon" width="200" height="150">
-                <p>Species Columba livia, or Rock Pigeon.
-                    Found in cities worldwide, pigeons have adapted to urban environments and are known for their navigation skills.
+                <p>You've encountered a Pokemon!!</p>
+                <img src="img/realbug.jpg" alt="Popup Image" width="200" height="150">
+                <p>Species Sphex pensylvanicus, or Great Black Wasp.
+                    Construction of nests takes place underground, species of digging wasp, deep black body color paired with iridescent shining blue wings, adults return paralyzed prey to the burrow for the larva’s consumption.
                 </p>
-                <img src="img/pigeonpoke.jpeg" alt="Inspired Pokemon" width="200" height="150">
-                <p>Inspired Pokemon: Pidgey</p>
+                <img src="img/beepoke.jpeg" alt="Additional Image" width="200" height="150">
+                <p> Inspired Pokemon: Beedrill</p>
             </div>
         </div>
 
@@ -70,13 +63,13 @@
         <div id="popup2" class="popup">
             <div class="popup-content">
                 <span class="close" onclick="closePopup('popup2')">&times;</span>
-                <p>You've encountered a City Creature!!</p>
-                <img src="img/realrat.jpg" alt="Real Rat" width="200" height="150">
-                <p>Species Rattus norvegicus, or Brown Rat.
-                    Common in urban areas, brown rats are highly adaptable and can thrive in various environments.
+                <p>You've encountered a Pokemon!!</p>
+                <img src="img/realslug.jpg" alt="Popup Image" width="200" height="150">
+                <p>Species Ariolimax, or Banana Slug.
+                    Second largest slug species in the world with no predators, identifiable by their bright yellow colorations, due to this combination they are resemblant of a banana, hence their name, may be found in a variety of colors. 
                 </p>
-                <img src="img/ratpoke.jpeg" alt="Inspired Pokemon" width="200" height="150">
-                <p>Inspired Pokemon: Rattata</p>
+                <img src="img/slugpoke.jpeg" alt="Additional Image" width="200" height="150">
+                <p> Inspired Pokemon: Gastrodon</p>
             </div>
         </div>
 
@@ -87,20 +80,21 @@
         <div id="popup3" class="popup">
             <div class="popup-content">
                 <span class="close" onclick="closePopup('popup3')">&times;</span>
-                <p>You've encountered a City Creature!!</p>
-                <img src="img/realraccoon.jpg" alt="Real Raccoon" width="200" height="150">
-                <p>Species Procyon lotor, or Raccoon.
-                    Known for their dexterous front paws and mask-like facial markings, raccoons are commonly found in urban settings.
+                <p>You've encountered a Pokemon!!</p>
+                <img src="img/realshroom.jpg" alt="Popup Image" width="200" height="150">
+                <p>Species Omphalotus olivascens, or Western Jack-o-Lantern Mushroom.
+                    Gilled fungi ranging from orange to brown in color, toxins make them unfit for human consumption, can be mistaken for chanterelles.
                 </p>
-                <img src="img/raccoonpoke.jpeg" alt="Inspired Pokemon" width="200" height="150">
-                <p>Inspired Pokemon: Zigzagoon</p>
+                <img src="img/shroompoke.jpeg" alt="Additional Image" width="200" height="150">
+                <p> Inspired Pokemon: Foongus</p>
             </div>
         </div>
 
-        <button id="goToMainPageBtnFromCity" style="position: fixed; top: 10px; right: 10px; padding: 20px; font-size: 15px; width: 80px; height: 80px; border-radius: 50%;">Home</button>
+        <button id="goToMainPageBtn" style="position: fixed; top: 10px; right: 10px; padding: 20px; font-size: 15px; width: 80px; height: 80px; border-radius: 50%;">Home</button>
     </div>
 
     <script src="js/forest.js"></script> <!-- Link to external JavaScript file -->
+
     <script>
         function openPopup(popupId) {
             $('#' + popupId).fadeIn();
@@ -116,20 +110,8 @@
             $('#forest-page').show();
         });
 
-        $('#goToCityBtn').click(function() {
-            $('#main-page').hide();
-            $('body').css('background-image', 'url("img/city.jpg")');
-            $('#city-page').show();
-        });
-
-        $('#goToMainPageBtnFromForest').click(function() {
+        $('#goToMainPageBtn').click(function() {
             $('#forest-page').hide();
-            $('body').css('background-image', 'url("https://redpawtechnologies.com/downloads/2020/04/SantaCruzCA.jpg")'); // Reset to main page background
-            $('#main-page').show();
-        });
-
-        $('#goToMainPageBtnFromCity').click(function() {
-            $('#city-page').hide();
             $('body').css('background-image', 'url("https://redpawtechnologies.com/downloads/2020/04/SantaCruzCA.jpg")'); // Reset to main page background
             $('#main-page').show();
         });
